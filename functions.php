@@ -5,7 +5,7 @@ if (! defined('WP_DEBUG')) {
 }
 
 /** Child Theme version */
-const GABINETE_VERSION = '0.0.1';
+const GABINETE_VERSION = '0.0.2';
 
 /* Enqueues necessary JS and CSS files */
 add_action( 'wp_enqueue_scripts', function () {
