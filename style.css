@@ -1,0 +1,39 @@
+/**
+ * Theme Name: Gabinete
+ * Description: Tema filho do tema Blocksy para o Gabinete
+ * Author: Mateus Wetah
+ * Template: blocksy
+ * Text Domain: gabinete
+ */
+
+/* Estilo especial para a capa da página especial de "Em breve" */
+.capa-em-breve {
+	padding: 2.5em;
+}
+.capa-em-breve .wp-block-cover__inner-container {
+	height: calc(100vh - 5em);
+}
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group,
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container,
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container>.wp-block-columns {
+	height: 100%;
+}
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column p {
+	margin-bottom: 2px;
+	margin-top: 4px;
+	line-height: normal;
+}
+@media screen and (max-width: 1420px) and (min-width: 738px) {
+	.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column h1 {
+		--fontSize: 30px !important;
+	}
+}
+.capa-em-breve .wp-block-cover__inner-container>.wp-block-group>.wp-block-group__inner-container>.wp-block-columns>.wp-block-column:last-child:not(:first-child) {
+	display: none;
+}
